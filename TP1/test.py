@@ -7,7 +7,8 @@ def test_1 ( ) :
 def test_2 ( ) :
 	assert f.puissance(-2 ,3) == -8
 	assert f.puissance(10 ,-2) == 0.01
+	assert f.puissance(0 ,2) == 0
 
-def test_passes_without_info():
+def test_3():
 	with pytest.raises(Exception) as e_info:
-		x = f.puissance(0, -5)
+		x = f.puissance(0, -1)
