@@ -6,6 +6,7 @@ def test_1 ( ) :
 
 def test_2 ( ) :
 	assert f.puissance(-2 ,3) == -8
+	assert f.puissance(-2, -2) == 0.25
 	assert f.puissance(10 ,-2) == 0.01
 	assert f.puissance(0 ,2) == 0
 
