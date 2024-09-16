@@ -1,8 +1,16 @@
+import math
 def puissance(a,b):
-	if not type(a) is int:
-		raise TypeError("Only integers are allowed")
-	if not type(b) is int:
-		raise TypeError("Only integers are allowed")
+	if not type(a) is int and not type(a) is float:
+		raise TypeError("Only integers and floats are allowed")
+	if not type(b) is int and not type(b) is float:
+		raise TypeError("Only integers and floats are allowed")
+	
+	if b != 0 and b < 1 and b > -1 and a < 0:
+		raise TypeError("Impossible")
+	
+	if type(b) is float:
+		r = math.exp((b)*math.log(a))
+		return r
 	
 	if a == 0 and b < 0:
 		raise TypeError("Impossible")
