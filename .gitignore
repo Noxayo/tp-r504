@@ -1,2 +1,3 @@
 TP4/.env-dev
 *__pycache__*
+*.class
